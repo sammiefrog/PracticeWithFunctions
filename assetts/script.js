@@ -40,7 +40,14 @@ let morePlanets = ["Pluto", "Neptune"];
 
 
 
-//4. 
+//4. Write code within the body of the following function to print all positive numbers from 1 to `num`, and console.log the result. (Hint: when you call this function to test it, don't forget to pass in a positive number as an argument)
 
-//5. 
+const logNums = num => {
+
+}
+
+
+
+//5. Create a function that accepts two parameters, num1 and num2. If num1 is greater than num2 print "First one wins!", if num1 is equal to num 2 print "It's a draw!", if num1 is less than num2 print "Second number prevails!". Test the function three times so each condition is met successfully.
+
 
