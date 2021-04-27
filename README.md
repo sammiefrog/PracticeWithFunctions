@@ -1,0 +1,2 @@
+# PracticeWithFunctions
+JavaScript Exercises
