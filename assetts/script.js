@@ -13,21 +13,21 @@ console.log("Let's try out our JavaScript Skills!");
 function add(num1, num2) {
     return num1 + num2;
 };
-const add = (num1, num2) => { num1 + num2}; 
+//const add = (num1, num2) => { num1 + num2}; 
 function subtract(num1, num2) {
     return num1 - num2;
 };
-const subtract = (num1, num2) => { num1 - num2}; 
+//const subtract = (num1, num2) => { num1 - num2}; 
 
 function multiply(num1, num2) {
     return num1 * num2;
 };
-const multiply = (num1, num2) => { num1 * num2}; 
+//const multiply = (num1, num2) => { num1 * num2}; 
 
 function divide(num1, num2) {
     return num1 / num2;
 };
-const divide = (num1, num2) => { num1 / num2}; 
+//const divide = (num1, num2) => { num1 / num2}; 
 
 console.log(add(1,1));
 console.log(subtract(2,1));
@@ -37,17 +37,15 @@ console.log(divide(9,3));
 //2. Write a FUNCTION to print each item in the following array to the console
 
 const fruits = ['Apple', 'Banana', 'Pear', 'Strawberry', 'Canteloupe'];
-
-for(let i = 0; i < fruits.length; i++){
-    console.log(fruits[i]);
+function displayFruits(fruit){
+    for(let i = 0; i < fruit.length; i++){
+        console.log(fruit[i]);
+    }
 }
-
-
+displayFruits(fruits);
 
 //3. This one has three steps, use Javascript Array methods for each part (try w3Schools for help)
-
 let planets = ["Earth", "Saturn", "Mars", "Jupiter", "Uranus", "Venus"];
-
 // Use an array method to remove "Venus" from the planets array, then print the changed array to the console
 planets.pop();
 console.log(planets);
