@@ -57,6 +57,7 @@ const logNums = num => {
 //Write code inside the following function that accepts a string and returns `true` is the string is a palindrome, and `false` if the string is not a palindrome.
 // --- A Palindrome is a word that is spelled the same way forwards and backwards ---
 //Examples of palindromes = mom, dad, level, radar
+// Hint: you can use multiple javascript array methods chained together, check w3schools for ideas
 
 const isPalindrome = (string) => {
 //write code here
