@@ -1,5 +1,5 @@
 console.log("Let's try out our JavaScript Skills!");
-
+// Gaoussou Terrance Cleo James
 
 //1. Write code in the body of each function so that:
     // * `add` returns the result of `num1` plus `num2`.
@@ -58,10 +58,8 @@ console.log(planets.unshift('Mercury'))
 
 // Use an array method to join the following array with the planets array, then print the new array to the console
 let morePlanets = ["Pluto", "Neptune"];
-
-Array.prototype.push.apply(planets, morePlanets)
-
-console.log(planets)
+let allPlanets = planets.concat(morePlanets)
+console.log(allPlanets)
 
 
 
@@ -69,7 +67,7 @@ console.log(planets)
 
 const logNums = num => {
  for (i=1; i<=100; i++)
-    console.log(logNums())
+    console.log(i)
 }
 
 
@@ -96,4 +94,3 @@ const isPalindrome = (string) => {
 isPalindrome("racecar"); //expects true
 isPalindrome("elephant"); //expects false
 
-// Gaoussou Terrance Cleo James
