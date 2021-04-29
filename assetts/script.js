@@ -13,18 +13,22 @@ console.log("Let's try out our JavaScript Skills!");
 function add(num1, num2) {
     return num1 + num2;
 };
-
+const add = (num1, num2) => { num1 + num2}; 
 function subtract(num1, num2) {
     return num1 - num2;
 };
+const subtract = (num1, num2) => { num1 - num2}; 
 
 function multiply(num1, num2) {
     return num1 * num2;
 };
+const multiply = (num1, num2) => { num1 * num2}; 
 
 function divide(num1, num2) {
     return num1 / num2;
 };
+const divide = (num1, num2) => { num1 / num2}; 
+
 console.log(add(1,1));
 console.log(subtract(2,1));
 console.log(multiply(2,2));
@@ -95,9 +99,9 @@ var splitString = string.split(""); // var splitString = "hello".split("");
 var joinArrayS = splitString.join("");
 var reverseArray = splitString.reverse();
 var joinArrayR = reverseArray.join("");
-   if( joinArrayS == joinArrayR){
-       console.log("true");
-   }else{ console.log("false");}
+if( string == joinArrayR){
+    console.log("true");
+    }else{ console.log("false");}
 };
 isPalindrome("Happy");
 isPalindrome("racecar"); //expects true
