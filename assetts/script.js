@@ -59,7 +59,6 @@ console.log(newPlanets);
 
 
 //4. Write code within the body of the following function to print all positive numbers from 1 to `num`, and console.log the result. (Hint: when you call this function to test it, don't forget to pass in a positive number as an argument)
-
 const logNums = num => {
     if( num > 0){
         for(let i = 1; i <= num; i++){
@@ -93,11 +92,8 @@ console.log(race(1,2));
 
 const isPalindrome = (string) => {
 //write code here
-var splitString = string.split(""); // var splitString = "hello".split("");
-var joinArrayS = splitString.join("");
-var reverseArray = splitString.reverse();
-var joinArrayR = reverseArray.join("");
-if( string == joinArrayR){
+const splitString = string.split("").reverse().join("");
+if( string === splitString){
     console.log("true");
     }else{ console.log("false");}
 };
