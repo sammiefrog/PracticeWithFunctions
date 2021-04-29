@@ -21,5 +21,7 @@ These are exercises to work on in small groups to practice what we have learned 
 # Helpful Resources
 
 [JavaScript Array Methods](https://www.w3schools.com/jsref/jsref_obj_array.asp)
+
 [JavaScript Loops](https://www.w3schools.com/js/js_loop_for.asp)
+
 [JavaScript Arrow Functions](https://www.w3schools.com/js/js_arrow_function.asp)
