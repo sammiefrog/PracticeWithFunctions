@@ -10,19 +10,41 @@ console.log("Let's try out our JavaScript Skills!");
     //Check all your work with console.log() so the answers are displayed in the browser!
     // ** BONUS ** convert all of these into Arrow Functions
 
-function add(num1, num2) {};
+function add(num1, num2) {
+    const add=num1+num2;
+    console.log(add);
+};
+add(5,2);
 
-function subtract(num1, num2) {};
 
-function multiply(num1, num2) {};
+function subtract(num1, num2) {
+    const sub=num1-num2;
+    console.log(sub);
+};
+subtract(5,2);
 
-function divide(num1, num2) {};
+function multiply(num1, num2) {
+    const mul=num1*num2;
+    console.log(mul);
+};
+multiply(5,2);
+
+function divide(num1, num2) {
+    const div=num1 / num2;
+    console.log(div);
+};
+divide(5,2);
+
 
 
 //2. Write a FUNCTION to print each item in the following array to the console
 
 const fruits = ['Apple', 'Banana', 'Pear', 'Strawberry', 'Canteloupe'];
-
+function arrayFunction(){
+    for(i=0;i<fruits.length;i++)
+console.log(fruits[i]);
+}
+arrayFunction();
 
 
 
@@ -31,27 +53,50 @@ const fruits = ['Apple', 'Banana', 'Pear', 'Strawberry', 'Canteloupe'];
 
 let planets = ["Earth", "Saturn", "Mars", "Jupiter", "Uranus", "Venus"];
 
-// Use an array method to remove "Venus" from the planets array, then print the changed array to the console
+// Use an array method to remove "Venus" from the planets array, then print the changed array to the 
+//console
+let remove=planets.pop();
+console.log(remove);
+console.log(planets);
 
 // Use an array method to add "Mercury" to the beginning of the planets array, then print the changed array to the console
+let begin=planets.unshift('Mercury');
+console.log(planets);
 
 // Use an array method to join the following array with the planets array, then print the new array to the console
 let morePlanets = ["Pluto", "Neptune"];
+console.log(planets.concat(morePlanets));
 
 
-
-//4. Write code within the body of the following function to print all positive numbers from 1 to `num`, and console.log the result. (Hint: when you call this function to test it, don't forget to pass in a positive number as an argument)
+//4. Write code within the body of the following function to print all positive numbers from 1 to `num`, 
+// and console.log the result. 
+// (Hint: when you call this function to test it, 
+//     don't forget to pass in a positive number as an argument)
 
 const logNums = num => {
+ for(i=1;i<num;i++){
+     console.log(i);
+ }
 
 }
+logNums(5);
 
 
 
 //5. Create a function that accepts two parameters, num1 and num2. If num1 is greater than num2 print "First one wins!", if num1 is equal to num 2 print "It's a draw!", if num1 is less than num2 print "Second number prevails!". Test the function three times so each condition is met successfully.
 
-
-
+const logNum=(num1,num2)=>{
+    if(num1>num2){
+        console.log('First one wins!');
+   }
+   else if(num1===num2){
+       console.log('Its a draw!');
+   }
+   else{
+       console.log('Second number prevails');
+   }
+}
+logNum(5,10);
 
 //Bonus Challenge!
 //Write code inside the following function that accepts a string and returns `true` is the string is a palindrome, and `false` if the string is not a palindrome.
@@ -61,9 +106,23 @@ const logNums = num => {
 
 const isPalindrome = (string) => {
 //write code here
-    
-    
-};
+     // find the length of a string
+     const len = string.length;
 
+     // loop through half of the string
+     for (let i = 0; i < len / 2; i++) {
+ 
+         // check if first and last string are same
+         if (string[i] !== string[len - 1 - i]) {
+             console.log('It is not a palindrome');
+         }
+     }
+     console.log('It is a palindrome');
+ 
+    }
 isPalindrome("racecar"); //expects true
-isPalindrome("elephant"); //expects false
+//isPalindrome("elephant"); //expects false
+
+
+
+
