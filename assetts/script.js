@@ -54,7 +54,7 @@ console.log(planets.pop())
 
 // Use an array method to add "Mercury" to the beginning of the planets array, then print the changed array to the console
 
-console.log(planets.push('Mercury'))
+console.log(planets.unshift('Mercury'))
 
 // Use an array method to join the following array with the planets array, then print the new array to the console
 let morePlanets = ["Pluto", "Neptune"];
