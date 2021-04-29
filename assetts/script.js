@@ -51,3 +51,18 @@ const logNums = num => {
 //5. Create a function that accepts two parameters, num1 and num2. If num1 is greater than num2 print "First one wins!", if num1 is equal to num 2 print "It's a draw!", if num1 is less than num2 print "Second number prevails!". Test the function three times so each condition is met successfully.
 
 
+
+
+//Bonus Challenge!
+//Write code inside the following function that accepts a string and returns `true` is the string is a palindrome, and `false` if the string is not a palindrome.
+// --- A Palindrome is a word that is spelled the same way forwards and backwards ---
+//Examples of palindromes = mom, dad, level, radar
+
+const isPalindrome = (string) => {
+//write code here
+    
+    
+};
+
+isPalindrome("racecar"); //expects true
+isPalindrome("elephant"); //expects false

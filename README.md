@@ -14,7 +14,9 @@ These are exercises to work on in small groups to practice what we have learned 
 
 2. Work together to solve each problem / activity within this file as a team. Feel free to utilize Codecademy resources, W3Schools, and anything else you find on Google.
 
-3. At the end of the allotted time, we will go over these exercises one by one. Group members are expected to raise their hands and guide the class through each solution.
+3. When your team is finished with the activity, submit a pull request from your fork!
+
+4. At the end of the allotted time, we will go over these exercises one by one. Group members are expected to raise their hands and guide the class through each solution.
 
 # Helpful Resources
 
