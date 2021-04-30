@@ -10,38 +10,48 @@ console.log("Let's try out our JavaScript Skills!");
     //Check all your work with console.log() so the answers are displayed in the browser!
     // ** BONUS ** convert all of these into Arrow Functions
 
-function add(num1, num2) {
-    const add=num1+num2;
-    console.log(add);
+function add(num1,num2) {
+ return num1+num2;
+  
 };
-add(5,2);
+console.log(add(5,2));
 
+const add=(num1,num2)=>num1+num2;
+console.log(add(5,2));
 
-function subtract(num1, num2) {
-    const sub=num1-num2;
-    console.log(sub);
+function subtract(num1,num2) {
+ return num1-num2;
+  
 };
-subtract(5,2);
+console.log(subtract(5,2));
 
-function multiply(num1, num2) {
-    const mul=num1*num2;
-    console.log(mul);
+const subtract=(num1,num2)=>num1-num2;
+console.log(add(5,2));
+
+function multiply(num1,num2) {
+ return num1*num2;
+  
 };
-multiply(5,2);
+console.log(multiply(5,2));
+
+const multiply=(num1,num2)=>num1*num2;
+console.log(multiply(5,2))
 
 function divide(num1, num2) {
-    const div=num1 / num2;
-    console.log(div);
+   return num1 / num2;
+   
 };
-divide(5,2);
+console.log(divide(5,2));
 
+const divide=(num1,num2)=>num1/num2;
+console.log(divide(5,2))
 
 
 //2. Write a FUNCTION to print each item in the following array to the console
 
 const fruits = ['Apple', 'Banana', 'Pear', 'Strawberry', 'Canteloupe'];
-function arrayFunction(){
-    for(i=0;i<fruits.length;i++)
+function arrayFunction(){ //const arrayFunction=()=>{ }
+    for(let i=0;i<fruits.length;i++)
 console.log(fruits[i]);
 }
 arrayFunction();
@@ -61,7 +71,7 @@ console.log(planets);
 
 // Use an array method to add "Mercury" to the beginning of the planets array, then print the changed array to the console
 let begin=planets.unshift('Mercury');
-console.log(planets);
+console.log(begins);
 
 // Use an array method to join the following array with the planets array, then print the new array to the console
 let morePlanets = ["Pluto", "Neptune"];
@@ -103,25 +113,23 @@ logNum(5,10);
 // --- A Palindrome is a word that is spelled the same way forwards and backwards ---
 //Examples of palindromes = mom, dad, level, radar
 // Hint: you can use multiple javascript array methods chained together, check w3schools for ideas
+   const isPalindrome = string => {
+    let splitString = string.split("");
+     console.log(splitString);
 
-const isPalindrome = (string) => {
-//write code here
-     // find the length of a string
-     const len = string.length;
+     let reverseString = splitString.reverse();
+     console.log(reverseString);
 
-     // loop through half of the string
-     for (let i = 0; i < len / 2; i++) {
- 
-         // check if first and last string are same
-         if (string[i] !== string[len - 1 - i]) {
-             console.log('It is not a palindrome');
-         }
+     let joinString = reverseString.join('');
+     console.log(joinString);
+    if (joinString === string) {
+         return true;
+     } else {
+         return false;
      }
-     console.log('It is a palindrome');
- 
-    }
-isPalindrome("racecar"); //expects true
-//isPalindrome("elephant"); //expects false
+ }
+    console.log(isPalindrome("racecar")); //expects true
+console.log(isPalindrome("elephant")); //expects false
 
 
 
