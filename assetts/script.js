@@ -10,20 +10,33 @@ console.log("Let's try out our JavaScript Skills!");
     //Check all your work with console.log() so the answers are displayed in the browser!
     // ** BONUS ** convert all of these into Arrow Functions
 
-function add(num1, num2) {};
+function add(num1, num2) {
+    return num1+num2;
+};
 
-function subtract(num1, num2) {};
+function subtract(num1, num2) {
+    return num1-num2;
+};
 
-function multiply(num1, num2) {};
+function multiply(num1, num2) {
+    return num1*num2;
+};
 
-function divide(num1, num2) {};
+function divide(num1, num2) {
+    return num1/num2;
+};
+
+console.log( add(3,5));
+console.log( subtract(6,7));
+console.log( multiply(3,9));
+console.log( divide(2,9));
 
 
 //2. Write a FUNCTION to print each item in the following array to the console
 
 const fruits = ['Apple', 'Banana', 'Pear', 'Strawberry', 'Canteloupe'];
 
-
+fruits.forEach(fruit => console.log(fruit));
 
 
 
@@ -32,25 +45,49 @@ const fruits = ['Apple', 'Banana', 'Pear', 'Strawberry', 'Canteloupe'];
 let planets = ["Earth", "Saturn", "Mars", "Jupiter", "Uranus", "Venus"];
 
 // Use an array method to remove "Venus" from the planets array, then print the changed array to the console
-
+planets.pop();
+console.log(planets);
 // Use an array method to add "Mercury" to the beginning of the planets array, then print the changed array to the console
-
+planets.unshift('Mercury');
+console.log(planets);
 // Use an array method to join the following array with the planets array, then print the new array to the console
 let morePlanets = ["Pluto", "Neptune"];
+//planets.unshift(morePlanets[0]);
+//planets.unshift(morePlanets[1]);
+let m = planets.concat(morePlanets);
+console.log(m);
 
 
+//4. Write code within the body of the following function to print all positive numbers from 1 to `num`, and console.log the result. 
+//(Hint: when you call this function to test it, don't forget to pass in a positive number as an argument)
 
-//4. Write code within the body of the following function to print all positive numbers from 1 to `num`, and console.log the result. (Hint: when you call this function to test it, don't forget to pass in a positive number as an argument)
+//const logNums = num => {
+//}
 
-const logNums = num => {
-
+var i;
+let num = 5;
+for (i = 1; i <= num; i++) {
+  console.log(i);
 }
+
 
 
 
 //5. Create a function that accepts two parameters, num1 and num2. If num1 is greater than num2 print "First one wins!", if num1 is equal to num 2 print "It's a draw!", if num1 is less than num2 print "Second number prevails!". Test the function three times so each condition is met successfully.
 
+function compareTwo(num1,num2){
+    if(num1>num2){
+        console.log("First one wins!");
+    }
+    else if(num1===num2){
+        console.log( "It's a draw!");
+    }
+    else{
+        console.log("Second number prevails!");
+    }
+}
 
+compareTwo(2,8);
 
 
 //Bonus Challenge!
