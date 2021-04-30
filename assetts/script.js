@@ -10,19 +10,31 @@ console.log("Let's try out our JavaScript Skills!");
     //Check all your work with console.log() so the answers are displayed in the browser!
     // ** BONUS ** convert all of these into Arrow Functions
 
-function add(num1, num2) {};
+function add(num1, num2) {
+    return num1 + num2
+};
+console.log(add (5, 4));
 
-function subtract(num1, num2) {};
+function subtract(num1, num2) {
+    return num1 - num2
+};
+console.log(subtract (5,4));
 
-function multiply(num1, num2) {};
+function multiply(num1, num2) {
+    return num1 * num2
+};
+console.log(multiply (5,4))
 
-function divide(num1, num2) {};
+function divide(num1, num2) {
+    return num1 / num2
+};
+console.log(divide(5,4))
 
 
 //2. Write a FUNCTION to print each item in the following array to the console
 
 const fruits = ['Apple', 'Banana', 'Pear', 'Strawberry', 'Canteloupe'];
-
+console.log(fruits)
 
 
 
@@ -32,19 +44,22 @@ const fruits = ['Apple', 'Banana', 'Pear', 'Strawberry', 'Canteloupe'];
 let planets = ["Earth", "Saturn", "Mars", "Jupiter", "Uranus", "Venus"];
 
 // Use an array method to remove "Venus" from the planets array, then print the changed array to the console
-
+planets.pop();
+console.log(planets);
 // Use an array method to add "Mercury" to the beginning of the planets array, then print the changed array to the console
-
+planets.unshift('Mercury');
+console.log(planets);
 // Use an array method to join the following array with the planets array, then print the new array to the console
 let morePlanets = ["Pluto", "Neptune"];
-
+planets.push('Pluto','Neptune');
+console.log(planets);
 
 
 //4. Write code within the body of the following function to print all positive numbers from 1 to `num`, and console.log the result. (Hint: when you call this function to test it, don't forget to pass in a positive number as an argument)
 
-const logNums = num => {
+const logNums = num => {num > 1;
+console.log(num)
 
-}
 
 
 
